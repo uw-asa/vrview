@@ -36,6 +36,10 @@
 
   <script src="build/three.js"></script>
   <script src="build/embed.js"></script>
+  <script>
+    var url = new URL(window.location.href);
+    document.title = url.searchParams.get("title");
+  </script>
 </body>
 
 </html>
